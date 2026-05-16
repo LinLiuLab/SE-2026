@@ -154,36 +154,35 @@ $ python manage.py test --filter test_api
 - 通过减少测试软件的时间，降低构建和维护软件的总体成本。
 - 有助于可预测地、可靠地检测错误。
 
-有众多工具进行端到端测试，例如 Selenium、Cypress、TestCafe 和 PlayWright 等。本次作业使用 Selenium 进行端到端测试，Selenium是一个用于Web应用程序测试的工具，**直接运行在浏览器中**，模拟真正的用户操作，测试应用程序功能，验证用户的实际需求。具体可以参考 [Selenium 文档](https://www.selenium.dev/documentation/en/)。
+有众多工具进行端到端测试，例如 Selenium、Cypress、TestCafe 和 PlayWright 等。本次作业使用 Playwright 进行端到端测试，Playwright 是一个用于Web应用程序测试的工具，**直接运行在浏览器中**，模拟真正的用户操作，测试应用程序功能，验证用户的实际需求。具体可以参考 [Playwright 文档](https://playwright.dev/docs/intro)。
 
 
 <figure markdown>
-![coverage](../../images/selenium.png){loading=lazy}
-<figcaption> Selenium 通过多种语言的 Binding 与浏览器进行交互
+![coverage](../../images/playwright.png){loading=lazy}
+<figcaption> Playwright 支持包括 Chromium、WebKit 和 Firefox 在内的所有现代渲染引擎，可在 Windows、Linux 和 macOS 上本地或 CI 环境中进行无头或有头测试，并支持原生移动端模拟。
 </figcaption>
 </figure>
 
-下面以一个简单的例子来说明 Selenium 的使用方法。假设我们要测试的网页是 `https://www.baidu.com`，我们可以使用 Selenium 的 Python Binding 来编写测试用例：
+下面以一个简单的例子来说明 Playwright 的使用方法。假设我们要测试的网页是 `https://www.baidu.com`，我们可以使用 Playwright 的 Python Binding 来编写测试用例：
 ```python
-# test_selenium.py
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 import time
-driver = webdriver.Chrome('drivers/chromedriver.exe')
-driver.get("http://www.baidu.com")
-assert "百度" in driver.title
-# https://selenium-python.readthedocs.io/locating-elements.html
-elem = driver.find_element(By.NAME, "wd")
-elem.clear()
-elem.send_keys("软件工程")
-elem.send_keys(Keys.RETURN)
-time.sleep(5)
-driver.close()
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=False)
+    page = browser.new_page()
+
+    page.goto("https://www.baidu.com")
+    page.wait_for_load_state("networkidle")
+
+    page.get_by_role("textbox").fill("软件工程")
+    page.get_by_role("button").click()
+    time.sleep(10)
+
+    browser.close()
 ```
-将 Driver 放在项目 `backend` 目录下的 `drivers` 文件夹中，然后运行：
+在 backend 目录下运行
 ```shell
-# 在 backend 目录下运行
 $ python driver.py
 ```
 你会发现浏览器自动打开，然后在搜索框中输入 `软件工程`，然后自动检索，在等待 10 秒后自动关闭浏览器。

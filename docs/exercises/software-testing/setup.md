@@ -115,36 +115,13 @@ $ npm start
     ```
 
 
-## 配置浏览器Driver
-端到端测试需要使用浏览器来模拟用户的行为，所以需要安装浏览器驱动，推荐使用 Chrome 浏览器和 ChromeDriver。
-
--  在浏览器地址栏中输入 `chrome://version/`，查看 Chrome 浏览器的版本号。
--  在`https://chromedriver.chromium.org/downloads` 下载兼容版本的 ChromeDriver，如果你的 Chrome 版本比较新，可以在 [这里](https://googlechromelabs.github.io/chrome-for-testing/) 下载对应版本的 ChromeDriver。
-!!! tip "ChromeDriver 下载"
-
-    如果以上方法均无法找到对应版本的 Driver，可以通过 [这里](https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)  找到对应版本的 Driver 下载地址，格式为 `https://storage.googleapis.com/chrome-for-testing-public/<版本号>/<平台>/chromedriver-<平台>.zip`
-
-    将 `<版本号>` 和 `<平台>` 替换为实际的版本号和平台，例如 Windows 平台的 `128.0.6613.137` 版本的 Driver 下载地址为 `https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.137/win64/chromedriver-win64.zip`
-
-    注意，并不是所有版本的 Chrome 都有对应的 ChromeDriver，找不到对应版本的 Driver 时，可以选择使用最接近的版本
-
-
--  解压后将其放在代码 `backend` 目录下的 `drivers` 目录中，`drivers` 目录中应当有 `chromedriver.exe` 或者 `chromedriver` 可执行文件。
-
--  修改 `tests/test_e2e.py` 中的 `DRIVER_PATH` 变量，将其指向 ChromeDriver 的实际路径。
-
-你可以在 `backend` 目录中使用 `python driver.py` 来测试 ChromeDriver 是否配置正确。
-
-!!! question "运行 `driver.py` 出现错误"
-    如果运行 `driver.py` 出现类似于下面的错误
-    ```shell
-    ValueError: Timeout value connect was <object object at 0x00000225D858F0C0>, but it must be an int, float or None.
-    ```
-​    原因是 `urllib3` 版本和 `selenium` 版本不兼容，可以通过下面的命令降低 `urllib3` 的版本来解决这个问题。
-    ```shell
-    $ pip uninstall urllib3
-    $ pip install urllib3==1.26.2
-    ```
+## 安装测试用浏览器
+端到端测试需要使用浏览器来模拟用户的行为，所以需要安装测试用浏览器.
+```shell
+# 在 backend 目录下运行
+python -m playwright install
+```
+这会自动安装 Playwright 支持的浏览器（ Chromium、Firefox、WebKit）.
 
 ## 运行测试
 在准备好上述环境后，就可以运行测试了。
@@ -166,7 +143,7 @@ TODO: 未登录直接登出 ... ok
 test_register (test_api.APITestCase)
 Example: 使用错误信息进行注册，检查返回值为失败 ... ok
 test_register_params_check (test_basic.BasicTestCase) ... ok
-test_web (test_e2e.SeleniumTestCase)
+test_web (test_e2e.PlaywrightTestCase)
 EXAMPLE: 使用测试用户进行登录 ... ok
 
 Coverage Report:

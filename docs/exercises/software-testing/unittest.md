@@ -165,6 +165,7 @@ $ python manage.py test --filter test_api
 
 下面以一个简单的例子来说明 Playwright 的使用方法。假设我们要测试的网页是 `https://www.baidu.com`，我们可以使用 Playwright 的 Python Binding 来编写测试用例：
 ```python
+# driver.py
 import time
 from playwright.sync_api import sync_playwright
 
@@ -176,7 +177,7 @@ with sync_playwright() as p:
     page.wait_for_load_state("networkidle")
 
     page.get_by_role("textbox").fill("软件工程")
-    page.get_by_role("button").click()
+    page.get_by_role("button", name="百度一下").click()
     time.sleep(10)
 
     browser.close()

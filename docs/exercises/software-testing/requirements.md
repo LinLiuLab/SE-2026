@@ -110,7 +110,7 @@ python manage.py test --filter test_api
 python manage.py test --filter test_e2e
 ```
 
-在该部分中，同学们需要在 `tests/test_e2e.py` 中使用 unittest 框架和 Playwright 为 SimpleBBS 补充端到端测试, playwright 提供了自动化控制浏览器的能力，同学们需要使用 playwright 控制浏览器实现用户的登录、发帖、更新帖子、登出等操作，在 `tests/test_e2e.py` 中提供了实现自动登录的部分供同学们参考。
+在该部分中，同学们需要在 `tests/test_e2e.py` 中使用 unittest 框架和 Playwright 为 SimpleBBS 补充端到端测试，Playwright 提供了自动化控制浏览器的能力，同学们需要使用 Playwright 控制浏览器实现用户的登录、发帖、更新帖子、登出等操作，在 `tests/test_e2e.py` 中提供了实现自动登录的部分供同学们参考。
 
 !!! question "注意事项"
     - 端到端测试需要使用浏览器和前端，但是由于助教已经在测试文件中启动了前端，所以你并不需要手动启动。

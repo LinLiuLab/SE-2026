@@ -121,7 +121,7 @@ $ npm start
 # 在 backend 目录下运行
 python -m playwright install
 ```
-这会自动安装 Playwright 支持的浏览器（ Chromium、Firefox、WebKit）.
+这会自动安装 Playwright 支持的浏览器（Chromium、Firefox、WebKit）。
 
 ## 运行测试
 在准备好上述环境后，就可以运行测试了。

@@ -1,7 +1,7 @@
-# SE-2025
-![Build documentation with mkdocs](https://github.com/LinLiuLab/SE-2025/workflows/Build%20documentation%20with%20mkdocs/badge.svg)
+# SE-2026
+[课程网站](https://linliulab.github.io/SE-2026/)
 
-本项目为清华大学2025年秋季学期《软件工程》课程网站，采用 `mkdocs` 编写
+本项目为清华大学2026年秋季学期《软件工程》课程网站，采用 `mkdocs` 编写
 
 ## 撰写
 
@@ -18,3 +18,18 @@ python3 -m pip install --user -r requirements.txt # 安装 Python 依赖包
 mkdocs serve # 直接在本地 serve，或者：
 mkdocs build --clean # 生成于 site/ 文件夹中
 ```
+
+## 发布
+
+课程网站：https://linliulab.github.io/SE-2026/
+
+沿用 MkDocs + GitHub Pages 的发布方式：源码保存在 `main` 分支，生成的网站发布到 `gh-pages` 分支。
+
+在仓库根目录执行：
+
+```bash
+python -m mkdocs build --clean
+python -m mkdocs gh-deploy --remote-name origin --remote-branch gh-pages
+```
+
+GitHub 仓库的 Settings → Pages 应选择 `Deploy from a branch`，分支为 `gh-pages`，目录为 `/(root)`。

@@ -12,6 +12,8 @@
         <meta name="author" content="LinLiuLab">
       
       
+        <link rel="canonical" href="https://linliulab.github.io/SE-2026/exercises/software-testing/unittest/">
+      
       
         <link rel="prev" href="../intro/">
       
@@ -208,13 +210,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/LinLiuLab/SE-2025" title="前往仓库" class="md-source" data-md-component="source">
+        <a href="https://github.com/LinLiuLab/SE-2026" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    LinLiuLab/SE-2025
+    LinLiuLab/SE-2026
   </div>
 </a>
       </div>
@@ -254,13 +256,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/LinLiuLab/SE-2025" title="前往仓库" class="md-source" data-md-component="source">
+      <a href="https://github.com/LinLiuLab/SE-2026" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    LinLiuLab/SE-2025
+    LinLiuLab/SE-2026
   </div>
 </a>
     </div>
@@ -952,11 +954,11 @@
 <p>Ruff 支持通过配置文件来定制规则。常见的做法是将配置写在 pyproject.toml 文件中，例如：</p>
 <div class="highlight"><pre><span></span><code><span class="k">[tool.ruff]</span>
 <span class="n">line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="w">        </span><span class="c1"># 设置每行的最大长度为 100，超过会报 E501（行过长）</span>
-<span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;py311&quot;</span><span class="w"> </span><span class="c1"># 指定目标 Python 版本</span>
+<span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"py311"</span><span class="w"> </span><span class="c1"># 指定目标 Python 版本</span>
 
 <span class="k">[tool.ruff.lint]</span>
-<span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;W&quot;</span><span class="p">]</span><span class="w">      </span><span class="c1"># 启用的规则类别</span>
-<span class="n">ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;E203&quot;</span><span class="p">]</span><span class="w">        </span><span class="c1"># 忽略特定规则</span>
+<span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"E"</span><span class="p">,</span><span class="w"> </span><span class="s2">"W"</span><span class="p">]</span><span class="w">      </span><span class="c1"># 启用的规则类别</span>
+<span class="n">ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"E203"</span><span class="p">]</span><span class="w">        </span><span class="c1"># 忽略特定规则</span>
 </code></pre></div>
 <h2 id="_3">单元测试</h2>
 <p>单元测试是软件开发中的一种测试方法，它的主要目标是验证代码中的最小可测试单元（通常是函数、方法或类）是否按预期工作。每个单元测试都应该是独立的，可以单独运行，而不依赖于任何其他代码或外部资源。</p>
@@ -987,18 +989,18 @@
 <span class="k">class</span><span class="w"> </span><span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">&#39;FOO&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">&#39;FOO&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">&#39;Foo&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
             <span class="k">raise</span> <span class="ne">TypeError</span>
 </code></pre></div>
 可以直接在 <code>__main__</code> 中运行该测试用例：
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 </code></pre></div></p>
 <p>同时，你也可以选择使用命令行来运行这些测试用例，我们将上述测试类代码保存到名为 <code>test.py</code> 的文件中，并运行如下命令
@@ -1047,32 +1049,32 @@ $<span class="w"> </span>coverage<span class="w"> </span>html
 <li>通过减少测试软件的时间，降低构建和维护软件的总体成本。</li>
 <li>有助于可预测地、可靠地检测错误。</li>
 </ul>
-<p>有众多工具进行端到端测试，例如 Selenium、Cypress、TestCafe 和 PlayWright 等。本次作业使用 Selenium 进行端到端测试，Selenium是一个用于Web应用程序测试的工具，<strong>直接运行在浏览器中</strong>，模拟真正的用户操作，测试应用程序功能，验证用户的实际需求。具体可以参考 <a href="https://www.selenium.dev/documentation/en/">Selenium 文档</a>。</p>
+<p>有众多工具进行端到端测试，例如 Selenium、Cypress、TestCafe 和 PlayWright 等。本次作业使用 Playwright 进行端到端测试，Playwright 是一个用于Web应用程序测试的工具，<strong>直接运行在浏览器中</strong>，模拟真正的用户操作，测试应用程序功能，验证用户的实际需求。具体可以参考 <a href="https://playwright.dev/docs/intro">Playwright 文档</a>。</p>
 <figure>
-<p><img alt="coverage" loading="lazy" src="../../../images/selenium.png" /></p>
-<figcaption> Selenium 通过多种语言的 Binding 与浏览器进行交互
+<p><img alt="coverage" loading="lazy" src="../../../images/playwright.png" /></p>
+<figcaption> Playwright 支持包括 Chromium、WebKit 和 Firefox 在内的所有现代渲染引擎，可在 Windows、Linux 和 macOS 上本地或 CI 环境中进行无头或有头测试，并支持原生移动端模拟。
 </figcaption>
 </figure>
-<p>下面以一个简单的例子来说明 Selenium 的使用方法。假设我们要测试的网页是 <code>https://www.baidu.com</code>，我们可以使用 Selenium 的 Python Binding 来编写测试用例：
-<div class="highlight"><pre><span></span><code><span class="c1"># test_selenium.py</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">selenium</span><span class="w"> </span><span class="kn">import</span> <span class="n">webdriver</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.common.keys</span><span class="w"> </span><span class="kn">import</span> <span class="n">Keys</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">selenium.webdriver.common.by</span><span class="w"> </span><span class="kn">import</span> <span class="n">By</span>
+<p>下面以一个简单的例子来说明 Playwright 的使用方法。假设我们要测试的网页是 <code>https://www.baidu.com</code>，我们可以使用 Playwright 的 Python Binding 来编写测试用例：
+<div class="highlight"><pre><span></span><code><span class="c1"># driver.py</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="s1">&#39;drivers/chromedriver.exe&#39;</span><span class="p">)</span>
-<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://www.baidu.com&quot;</span><span class="p">)</span>
-<span class="k">assert</span> <span class="s2">&quot;百度&quot;</span> <span class="ow">in</span> <span class="n">driver</span><span class="o">.</span><span class="n">title</span>
-<span class="c1"># https://selenium-python.readthedocs.io/locating-elements.html</span>
-<span class="n">elem</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">NAME</span><span class="p">,</span> <span class="s2">&quot;wd&quot;</span><span class="p">)</span>
-<span class="n">elem</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-<span class="n">elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s2">&quot;软件工程&quot;</span><span class="p">)</span>
-<span class="n">elem</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">Keys</span><span class="o">.</span><span class="n">RETURN</span><span class="p">)</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">driver</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">playwright.sync_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">sync_playwright</span>
+
+<span class="k">with</span> <span class="n">sync_playwright</span><span class="p">()</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
+    <span class="n">browser</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
+
+    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s2">"https://www.baidu.com"</span><span class="p">)</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">wait_for_load_state</span><span class="p">(</span><span class="s2">"networkidle"</span><span class="p">)</span>
+
+    <span class="n">page</span><span class="o">.</span><span class="n">get_by_role</span><span class="p">(</span><span class="s2">"textbox"</span><span class="p">)</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="s2">"软件工程"</span><span class="p">)</span>
+    <span class="n">page</span><span class="o">.</span><span class="n">get_by_role</span><span class="p">(</span><span class="s2">"button"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"百度一下"</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-将 Driver 放在项目 <code>backend</code> 目录下的 <code>drivers</code> 文件夹中，然后运行：
-<div class="highlight"><pre><span></span><code><span class="c1"># 在 backend 目录下运行</span>
-$<span class="w"> </span>python<span class="w"> </span>driver.py
+在 backend 目录下运行
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>python<span class="w"> </span>driver.py
 </code></pre></div>
 你会发现浏览器自动打开，然后在搜索框中输入 <code>软件工程</code>，然后自动检索，在等待 10 秒后自动关闭浏览器。</p>
 <p>在本次作业中，你需要补全 <code>tests/test_e2e.py</code> 中被标注为 <code>TODO</code> 的测试用例，然后运行如下命令：
@@ -1098,7 +1100,7 @@ $<span class="w"> </span>python<span class="w"> </span>driver.py
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年9月9日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2026年9月7日</span>
   </span>
 
     
@@ -1109,12 +1111,13 @@ $<span class="w"> </span>python<span class="w"> </span>driver.py
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"/></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:15510682898@163.com">Zyt23</a>
+        <a href="mailto:15510682898@163.com">Zyt23</a>, 
+        <a href="mailto:kvtodev@outlook.com">Deyu Wang</a>
     </nav>
   </span>
 
@@ -1148,7 +1151,7 @@ $<span class="w"> </span>python<span class="w"> </span>driver.py
   
     <div class="md-source-date">
       <!-- <small>
-          作者: <span class='git-page-authors git-authors'><a href='mailto:15510682898@163.com'>Zyt23</a></span>
+          作者: <span class='git-page-authors git-authors'><a href='mailto:15510682898@163.com'>Zyt23</a> (89.69%), <a href='mailto:kvtodev@outlook.com'>Deyu Wang</a> (10.31%)</span>
       </small> -->
     </div>
   
@@ -1215,7 +1218,7 @@ $<span class="w"> </span>python<span class="w"> </span>driver.py
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 LinLiuLab. All Rights Reserved.
+      Copyright &copy; 2026 LinLiuLab. All Rights Reserved.
     </div>
   
   

@@ -2,4 +2,4 @@
 
 **请参阅腾讯文档**
 
-【腾讯文档】[2025秋季《软件工程》应用部署作业 FAQ](https://docs.qq.com/aio/DZXBpUnpiZk53YnBx)
+【腾讯文档】[2026秋季《软件工程》应用部署作业 FAQ](https://docs.qq.com/aio/DZXBpUnpiZk53YnBx)

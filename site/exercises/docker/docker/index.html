@@ -12,6 +12,8 @@
         <meta name="author" content="LinLiuLab">
       
       
+        <link rel="canonical" href="https://linliulab.github.io/SE-2026/exercises/docker/docker/">
+      
       
         <link rel="prev" href="../linux/">
       
@@ -208,13 +210,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/LinLiuLab/SE-2025" title="前往仓库" class="md-source" data-md-component="source">
+        <a href="https://github.com/LinLiuLab/SE-2026" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    LinLiuLab/SE-2025
+    LinLiuLab/SE-2026
   </div>
 </a>
       </div>
@@ -254,13 +256,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/LinLiuLab/SE-2025" title="前往仓库" class="md-source" data-md-component="source">
+      <a href="https://github.com/LinLiuLab/SE-2026" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    LinLiuLab/SE-2025
+    LinLiuLab/SE-2026
   </div>
 </a>
     </div>
@@ -1205,8 +1207,8 @@
 </code></pre></div></li>
 <li>在该文件中添加如下内容：
   <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;registry-mirrors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;https://mirror.ccs.tencentyun.com&quot;</span>
+<span class="w">  </span><span class="nt">"registry-mirrors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">"https://mirror.ccs.tencentyun.com"</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div></li>
@@ -1240,7 +1242,7 @@ nginx<span class="w">        </span>latest<span class="w">    </span>eb4a5715918
 <p>使用<code>docker ps</code>命令就能查看正在运行中的容器：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>docker<span class="w"> </span>ps
 CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w">          </span>COMMAND<span class="w">                  </span>CREATED<span class="w">         </span>STATUS<span class="w">         </span>PORTS<span class="w">                  </span>NAMES
-8415482a6e05<span class="w">   </span>nginx:latest<span class="w">   </span><span class="s2">&quot;/docker-entrypoint.…&quot;</span><span class="w">   </span><span class="m">5</span><span class="w"> </span>seconds<span class="w"> </span>ago<span class="w">   </span>Up<span class="w"> </span><span class="m">5</span><span class="w"> </span>seconds<span class="w">   </span><span class="m">0</span>.0.0.0:8080-&gt;80/tcp<span class="w">   </span>nginx
+8415482a6e05<span class="w">   </span>nginx:latest<span class="w">   </span><span class="s2">"/docker-entrypoint.…"</span><span class="w">   </span><span class="m">5</span><span class="w"> </span>seconds<span class="w"> </span>ago<span class="w">   </span>Up<span class="w"> </span><span class="m">5</span><span class="w"> </span>seconds<span class="w">   </span><span class="m">0</span>.0.0.0:8080-&gt;80/tcp<span class="w">   </span>nginx
 </code></pre></div>
 <p>这样我们就可以通过访问主机的 8080 端口来访问运行在容器中的 Nginx 服务器。
 <img alt="Nginx" src="../../../images/nginx-hello.png" /></p>
@@ -1261,7 +1263,7 @@ CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w
 
 <span class="k">EXPOSE</span><span class="w"> </span><span class="s">80</span>
 
-<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;nginx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-g&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;daemon off;&quot;</span><span class="p">]</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">"nginx"</span><span class="p">,</span><span class="w"> </span><span class="s2">"-g"</span><span class="p">,</span><span class="w"> </span><span class="s2">"daemon off;"</span><span class="p">]</span>
 </code></pre></div>
 <p>这个 Dockerfile 执行的第一步是从 Docker Hub 下载最新版本的官方 Nginx 镜像，如果本地已经有这个镜像，就不会再次下载。接着，它会将我们本地的 nginx.conf 文件复制到容器的 <code>/etc/nginx/nginx.conf</code>，以覆盖默认的 Nginx 配置文件。然后，它会将我们的网站页面复制到容器的网站根目录中。在开放 80 端口后，我们通过 CMD 指令设置容器启动时运行 Nginx 服务器。</p>
 <p>在本地，我们的 nginx.conf 和 index.html 内容如下</p>
@@ -1362,14 +1364,14 @@ http {
 <span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
 <span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span>
 <span class="w">    </span><span class="no">bash -c</span>
-<span class="w">    </span><span class="no">&quot;python3 manage.py collectstatic --no-input &amp;&amp;</span>
+<span class="w">    </span><span class="no">"python3 manage.py collectstatic --no-input &amp;&amp;</span>
 <span class="w">    </span><span class="no">python3 manage.py migrate &amp;&amp;</span>
-<span class="w">    </span><span class="no">gunicorn --timeout=30 --workers=4 --bind :8000 django_app.wsgi:application&quot;</span>
+<span class="w">    </span><span class="no">gunicorn --timeout=30 --workers=4 --bind :8000 django_app.wsgi:application"</span>
 <span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.:/code</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">static-volume:/code/static</span>
 <span class="w">  </span><span class="nt">expose</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8000&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"8000"</span>
 <span class="w">  </span><span class="nt">depends_on</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">db</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">service_healthy</span>
@@ -1392,10 +1394,10 @@ http {
 <p><div class="highlight"><pre><span></span><code><span class="nt">db</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql:5.7</span>
 <span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;./mysql:/var/lib/mysql&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"./mysql:/var/lib/mysql"</span>
 <span class="w">  </span><span class="nt">env_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.env</span>
 <span class="w">  </span><span class="nt">expose</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;3306&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"3306"</span>
 <span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
 <span class="w">  </span><span class="nt">environment</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=${DB_NAME}</span>
@@ -1403,7 +1405,7 @@ http {
 <span class="w">  </span><span class="nt">networks</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db_network</span>
 <span class="w">  </span><span class="nt">healthcheck</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CMD-SHELL&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;mysqladmin</span><span class="nv"> </span><span class="s">ping</span><span class="nv"> </span><span class="s">-h</span><span class="nv"> </span><span class="s">localhost</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">root</span><span class="nv"> </span><span class="s">-p${DB_PASSWORD}&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"CMD-SHELL"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"mysqladmin</span><span class="nv"> </span><span class="s">ping</span><span class="nv"> </span><span class="s">-h</span><span class="nv"> </span><span class="s">localhost</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">root</span><span class="nv"> </span><span class="s">-p${DB_PASSWORD}"</span><span class="p p-Indicator">]</span>
 <span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
 <span class="w">    </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
 <span class="w">    </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
@@ -1429,7 +1431,7 @@ http {
 <span class="w">  </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
 <span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx:latest</span>
 <span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8001:8000&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"8001:8000"</span>
 <span class="w">  </span><span class="nt">volumes</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">static-volume:/code/static</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./config/nginx:/etc/nginx/conf.d</span>
@@ -1463,14 +1465,14 @@ Nginx 使用的是官方的最新镜像</p>
 <li>首先需要将目录中的 <code>.env_example</code> 文件复制一份，重命名为 <code>.env</code>，并修改其中的环境变量 [DB_NAME] 和 [DB_PASSWORD]，用于 MySQL 镜像的配置和使用。</li>
 <li>然后修改 <code>django_apps/settings.py</code> 中的 <code>DATABASES</code> 配置内容，替换 <code>[DB_NAME]</code> 与 <code>[DB_PASSWORD]</code> 为你在 <code>.env</code> 文件中设置的值。
     <div class="highlight"><pre><span></span><code><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;default&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;ENGINE&quot;</span><span class="p">:</span> <span class="s2">&quot;django.db.backends.mysql&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;NAME&quot;</span><span class="p">:</span> <span class="s2">&quot;[DB_NAME]&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;USER&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;PASSWORD&quot;</span><span class="p">:</span> <span class="s2">&quot;[DB_PASSWORD]&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;HOST&quot;</span><span class="p">:</span> <span class="s2">&quot;db&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;3306&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;OPTIONS&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;charset&quot;</span><span class="p">:</span> <span class="s2">&quot;utf8mb4&quot;</span><span class="p">},</span>
+  <span class="s2">"default"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"ENGINE"</span><span class="p">:</span> <span class="s2">"django.db.backends.mysql"</span><span class="p">,</span>
+      <span class="s2">"NAME"</span><span class="p">:</span> <span class="s2">"[DB_NAME]"</span><span class="p">,</span>
+      <span class="s2">"USER"</span><span class="p">:</span> <span class="s2">"root"</span><span class="p">,</span>
+      <span class="s2">"PASSWORD"</span><span class="p">:</span> <span class="s2">"[DB_PASSWORD]"</span><span class="p">,</span>
+      <span class="s2">"HOST"</span><span class="p">:</span> <span class="s2">"db"</span><span class="p">,</span>
+      <span class="s2">"PORT"</span><span class="p">:</span> <span class="s2">"3306"</span><span class="p">,</span>
+      <span class="s2">"OPTIONS"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"charset"</span><span class="p">:</span> <span class="s2">"utf8mb4"</span><span class="p">},</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></li>
@@ -1501,7 +1503,7 @@ Nginx 使用的是官方的最新镜像</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年9月9日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2026年9月7日</span>
   </span>
 
     
@@ -1618,7 +1620,7 @@ Nginx 使用的是官方的最新镜像</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 LinLiuLab. All Rights Reserved.
+      Copyright &copy; 2026 LinLiuLab. All Rights Reserved.
     </div>
   
   

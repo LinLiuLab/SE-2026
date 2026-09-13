@@ -16,7 +16,7 @@ nav:
   - 课程概述: index.md
   - 个人作业:
     - 清软论坛说明: exercises/bbs.md
-    - 测试:
+    - 单元测试:
       - 作业介绍: exercises/software-testing/intro.md
       - 测试基础: exercises/software-testing/unittest.md
       - 环境搭建: exercises/software-testing/setup.md

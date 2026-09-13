@@ -7,6 +7,11 @@ copyright: 'Copyright &copy; 2026 LinLiuLab. All Rights Reserved.'
 repo_name: 'LinLiuLab/SE-2026'
 repo_url: 'https://github.com/LinLiuLab/SE-2026'
 
+# Keep the UML assignment source for later, but omit it from the published site.
+# To restore it, remove this exclusion and restore its entry under 个人作业.
+exclude_docs: |
+  /exercises/uml.md
+
 nav:
   - 课程概述: index.md
   - 个人作业:
@@ -25,7 +30,6 @@ nav:
       - 作业要求: exercises/docker/requirements.md
       - 提交说明: exercises/docker/submit.md
       - FAQ: exercises/docker/faq.md
-    - 系统建模: exercises/uml.md
 
 theme:
   name: material

@@ -41,7 +41,7 @@ Ruff 支持通过配置文件来定制规则。常见的做法是将配置写在
 ```toml
 [tool.ruff]
 line-length = 100        # 设置每行的最大长度为 100，超过会报 E501（行过长）
-target-version = "py311" # 指定目标 Python 版本
+target-version = "py39"  # 指定目标 Python 版本为 3.9
 
 [tool.ruff.lint]
 select = ["E", "W"]      # 启用的规则类别

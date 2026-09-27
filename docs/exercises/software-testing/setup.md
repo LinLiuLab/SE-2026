@@ -50,8 +50,8 @@ There is NO WARRANTY, to the extent permitted by law.
 
 运行如下命令来创建虚拟环境并安装必要的依赖。
 ```shell
-# 创建一个名为 SimpleBBS 的虚拟环境，Python 版本为 3.8
-$ conda create -n SimpleBBS python=3.8
+# 创建一个名为 SimpleBBS 的虚拟环境，Python 版本为 3.9
+$ conda create -n SimpleBBS python=3.9
 # 激活虚拟环境
 $ conda activate SimpleBBS
 # 使用 pip 安装依赖，在 backend 目录下执行

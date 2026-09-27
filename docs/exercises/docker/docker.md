@@ -307,7 +307,7 @@ Project，或者说项目，是由一组容器组成的业务单元。这些容�
 
 首先我们看一下 Dockerfile 的内容：
 ```dockerfile
-FROM python:3.7
+FROM python:3.9
 
 ENV PYTHONUNBUFFERED 1
 
@@ -318,7 +318,7 @@ ADD requirements.txt /code/
 RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ADD . /code/
 ```
-这个 Dockerfile 的内容比较简单，它首先指定了基础镜像为 Python 3.7，然后安装了项目所需要的依赖，最后将项目的代码复制到镜像中。这样我们就可以通过 Dockerfile 来构建一个包含项目代码和依赖的镜像了。
+这个 Dockerfile 的内容比较简单，它首先指定了基础镜像为 Python 3.9，然后安装了项目所需要的依赖，最后将项目的代码复制到镜像中。这样我们就可以通过 Dockerfile 来构建一个包含项目代码和依赖的镜像了。
 
 ??? tip "如何调试 Dockerfile 的构建"
     在实际编写 Dockerfile 的过程中，我们可能会遇到一些问题，例如某些依赖无法安装、代码无法复制等等。这时我们可以通过在 Dockerfile 中添加一些**调试信息**来帮助我们定位问题。

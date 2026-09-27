@@ -12,7 +12,7 @@
     - 通过你的服务器 `ip:8000` 可以访问到论坛前端并正常进行各项操作；
     - 通过你的服务器 `ip:8000/api/v1` 可以直接访问后端的各项 API；
 3. 其他要求
-    - 你的 Python 版本需要恰好为 3.8.x，你的Nginx版本为 latest，MySQL 版本恰好为 8.1；
+    - 你的 Python 版本需要恰好为 3.9.x，你的Nginx版本为 latest，MySQL 版本恰好为 8.1；
     - 各个 service 之间的依赖关系应设置合理（后端服务需要在 MySQL 服务初始化完成后再启动，你可以通过 `depends_on` 和 `healthcheck` 结合实现）。数据库健康检查的间隔时间应为 10 秒，超时时间为 5 秒，重试次数为 5 次；
     - 清软论坛镜像 container 名称为 `app`，nginx 镜像 container 名称为 `nginx`，MySQL 镜像的container 名称为 `mysql`；（你可以在 docker-compose 配置中指定 container name）
     - 你的数据库使用账号 root（默认值），其密码为你的学号，数据库名称为 thss，使用端口3306（默认值）。请注意 MySQL 默认镜像的时区为 UTC，字符集是 latin1，你也需要进行调整。可以通过在 docker-compose 中指定下述值实现：

@@ -1,6 +1,6 @@
 # 清软论坛说明
 
-清软论坛项目后端部分依赖 `Django 4.2.5`、`djangorestframework 3.15.2` 及 `Python 3.8.x`，前端部分依赖 `React` 和 `node 18.x.x`
+清软论坛项目后端部分依赖 `Django 4.2.5`、`djangorestframework 3.15.2` 及 `Python 3.9.x`，前端部分依赖 `React` 和 `node 18.x.x`
 
 项目分为前端和后端，前端代码在 `frontend` 目录下，后端代码在 `backend` 目录下
 

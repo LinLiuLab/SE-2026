@@ -1309,7 +1309,7 @@ http {
 </code></pre></div></p>
 <p>相信各位同学已经在<strong>之前的课程中</strong>学习过 Web 开发的相关知识，因此这里不再赘述。我们的目标是将这个项目容器化，使得我们可以通过 Docker Compose 来一键启动或者部署整个项目。</p>
 <p>首先我们看一下 Dockerfile 的内容：
-<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.7</span>
 
 <span class="k">ENV</span><span class="w"> </span>PYTHONUNBUFFERED<span class="w"> </span><span class="m">1</span>
 
@@ -1320,7 +1320,7 @@ http {
 <span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
 <span class="k">ADD</span><span class="w"> </span>.<span class="w"> </span>/code/
 </code></pre></div>
-这个 Dockerfile 的内容比较简单，它首先指定了基础镜像为 Python 3.9，然后安装了项目所需要的依赖，最后将项目的代码复制到镜像中。这样我们就可以通过 Dockerfile 来构建一个包含项目代码和依赖的镜像了。</p>
+这个 Dockerfile 的内容比较简单，它首先指定了基础镜像为 Python 3.7，然后安装了项目所需要的依赖，最后将项目的代码复制到镜像中。这样我们就可以通过 Dockerfile 来构建一个包含项目代码和依赖的镜像了。</p>
 <details class="tip">
 <summary>如何调试 Dockerfile 的构建</summary>
 <p>在实际编写 Dockerfile 的过程中，我们可能会遇到一些问题，例如某些依赖无法安装、代码无法复制等等。这时我们可以通过在 Dockerfile 中添加一些<strong>调试信息</strong>来帮助我们定位问题。</p>
